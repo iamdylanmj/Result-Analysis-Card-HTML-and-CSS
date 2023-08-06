@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --blue-dark: #322bea;
+    --blue-light: #6743ff;
+
+    /* circle */
+    
+    --circle-dark:#4a24cf;
+    --circle-light:#4634f0;
+
+    --background-1: #fdfefe;
+    --background-2:#7e70fc;
+
+    --fnt-color-1:#8b83f5;
+    --fnt-color-2:#7e70fc;
+    --fnt-color-3:#474961;
+    --fnt-color-4:#c4b7fe;
+    --fnt-color-5:#bfc1d0;
+
+    --fnt-color-ul:#b2aeb7;
+    --fnt-color-ul-2:#555968;
+
+    --fnt-li-1:#ea9b9d;
+    --bg-color-li-1:#fff6f5;
+
+    --fnt-li-2:#f2c875;
+    --bg-color-li-2:#fffbf2;
+
+    --fnt-li-3:#55b9a1;
+    --bg-color-li-3:#f2fbfa;
+
+
+    --fnt-li-4:#424fa8;
+    --bg-color-li-4:#f3f3fd;
+
+    --btn-color:#303b59;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* main container styling */
+  /* containers styling */
+  .main-cont {
+    width: 700px;
+    height: 460px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -20px;
+    display: flex;
+  }
+
+  /* right side of the container */
+.main-cont__result {
+    width: 50%;
+    height: 100%;
+    background: rgb(72,53,241);
+    background: linear-gradient(360deg, rgba(72,53,241,1) 0%, rgba(70,53,243,0.7428221288515406) 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: auto; */
+  }
+  .main-cont__result-title {
+    max-width: 100%;
+    height: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform:capitalize;
+    font-weight: 500;
+    color: var(--fnt-color-4);
+
+  }
+  .main-cont__result-score {
+    width: 52%;
+    height: 40%;
+    background: rgb(74,36,207);
+    background: linear-gradient(180deg, rgba(74,36,207,1) 0%, rgba(101,72,251,0.8884803921568627) 87%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-cont__result-score h1 {
+    color: var(--background-1);
+    font-size: 4rem;
+  }
+  .main-cont__result-score span {
+    color: var(--fnt-color-4);
+    font-size: 0.85rem;
+  }
+  .main-cont__result-status {
+    height: 41%;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .main-cont__result-status h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: var(--background-1);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  .main-cont__result-status p {
+    font-size: 0.8rem;
+    color: var(--fnt-color-4);
+    line-height: 20px;
+    letter-spacing: 0.01rem;
+  }
+  /* left side of the container */
+
+  .main-cont__summery {
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-cont__summery-title  {
+    /* background-color: red; */
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-cont__summery-title p {
+    margin-top: 6px;
+    margin-left: 20px;
+    text-transform:capitalize;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    color: var(--fnt-color-3);
+  }
+  .main-cont__summery ul {
+    /* background-color: red; */
+    height: 60%;
+    width: 90%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+  .main-cont__summery-li {
+    /* background-color: #55b9a1; */
+    height: 50px;
+    max-width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-cont__summery-li div {
+    /* background-color: deeppink; */
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .main-cont__summery-li i,
+  .main-cont__summery-li p {
+    margin-left: 10px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+  }
+  .main-cont__summery-mark {
+    width: 100px;
+    height: 100%;
+    font-weight: 500 !important;
+    color: var(--fnt-color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-cont__summery-mark span {
+    color: var(--fnt-color-5);
+  }
+
+  .main-cont__summery-li--reaction {
+    background-color: var(--bg-color-li-1);
+  }
+  #reaction {
+    color: var(--fnt-li-1);
+  }
+
+  .main-cont__summery-li--memory {
+    background-color: var(--bg-color-li-2);
+  }
+  #memory {
+    color: var(--fnt-li-2);
+  }
+
+  .main-cont__summery-li--verbal {
+    background-color: var(--bg-color-li-3);
+  }
+  #verbal {
+    color: var(--fnt-li-3);
+  }
+
+  .main-cont__summery-li--visual {
+    background-color: var(--bg-color-li-4);
+  }
+  #visual {
+    color: var(--fnt-li-4);
+  }
+
+  /* button styling */
+  .btn {
+    /* background-color: red; */
+    width: 100%;
+    height: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn button {
+    padding: 5px 0;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    width: 90%;
+    padding: 14px;
+    background-color: var(--btn-color);
+    color: var(--background-1);
+    border: none;
+    border-radius: 50px;
+  }
+
+
+  /* ================================================== */
+  /* media query starts here */
+
+  @media (max-width: 700px) {
+    
+    body {
+    align-items: flex-start;
+    }
+ 
+    .main-cont {
+      width: 360px;
+      height: 750px;
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-cont__result {
+      width: 100%;
+      height: 100%;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      
+    }
+    .main-cont__result-score {
+      width: 43%;
+      height: 40%;
+    }
+    .main-cont__result-status {
+      height: 41%;
+      max-width: 60%;
+    }
+    .main-cont__summery {
+      width: 100%;
+      height: 100%;
+      
+    }
+    .main-cont__result-title {
+      max-width: 100%;
+      height: 19%;
+  
+    }
+  }
+  
+  
