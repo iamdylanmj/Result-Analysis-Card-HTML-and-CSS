@@ -1,4 +1,4 @@
-# Project Title
+# Simple card using HTML and CSS
 
 <!-- Add an appropriate project title here -->
 
