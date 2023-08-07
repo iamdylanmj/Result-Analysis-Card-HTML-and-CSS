@@ -8,6 +8,9 @@
 
 This project is a simple web application that displays a user's test result and a summary of their scores in different categories. It demonstrates responsive design using media queries to ensure proper rendering on various screen sizes.
 
+## Demo
+You can view the live demo of the result summery component [here](https://iamdylanmj.github.io/Result-Analysis-Card-HTML-and-CSS/)
+
 ## Technologies Used
 
 <!-- List the technologies and libraries used in your project -->
