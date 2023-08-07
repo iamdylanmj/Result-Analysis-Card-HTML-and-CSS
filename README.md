@@ -1,4 +1,4 @@
-# Simple card using HTML and CSS
+# Result summery component using HTML and CSS
 
 <!-- Add an appropriate project title here -->
 
